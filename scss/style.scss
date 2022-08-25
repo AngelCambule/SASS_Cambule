@@ -23,20 +23,20 @@
     background-position: center;
     header {
         grid-area: header;
-        color: white;
+        color: $color_letras;
         nav {
             display: flex;
             justify-content: space-around;
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid $color_bordes;
             background-color: black;
             ul {
                 list-style: none;
                 a {
                     text-decoration: none;
                     color: rgb(255, 255, 255);
-                    a:hover {
-                        border-top: 1px white solid;
-                        border-bottom: 1px white solid;
+                    :hover {
+                        border-top: 1px $color_bordes solid;
+                        border-bottom: 1px $color_bordes solid;
                     }
                     li {
                         display: inline-block;
@@ -55,7 +55,7 @@ main {
     grid-area: main;
     display: flex;
     align-items: center;
-    color: white;
+    color: $color_letras;
     justify-content: center;
     gap: 2rem;
     .desc {
@@ -65,7 +65,7 @@ main {
         padding: 20px;
         border-radius: 5px;
         backdrop-filter: blur(3px);
-        border: 1px white solid;
+        border: 1px $color_bordes solid;
         transform: rotate(-25deg);
     }
     .desc1 {
@@ -75,7 +75,7 @@ main {
         padding: 20px;
         border-radius: 5px;
         backdrop-filter: blur(3px);
-        border: 1px white solid;
+        border: 1px $color_bordes solid;
         transform: rotate(25deg);
     }
 }
@@ -92,9 +92,9 @@ section {
 
 footer {
     grid-area: footer;
-    color: white;
+    color: $color_letras;
     text-align: center;
-    border-top: 1px white solid ;
+    border-top: 1px $color_bordes solid ;
 }
 
 @media screen and (max-width:1024px) {
